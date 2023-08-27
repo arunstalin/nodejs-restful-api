@@ -1,0 +1,22 @@
+{
+  "name": "shop-api",
+  "version": "0.0.1",
+  "description": "NodeJS RESTful API Project (Build a shop API)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunstalin/nodejs-restful-api.git"
+  },
+  "author": "Arunstalin Sundaramony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arunstalin/nodejs-restful-api/issues"
+  },
+  "homepage": "https://github.com/arunstalin/nodejs-restful-api#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
