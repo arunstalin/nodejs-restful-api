@@ -32,11 +32,11 @@ app.use(bodyParser.json());
 app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
 
-app.use((req, res, next) => {
-    res.status(200).json({
-        message: "It Works"
-    })
-});
+// app.use((req, res, next) => {
+//     res.status(200).json({
+//         message: "It Works"
+//     })
+// });
 
 app.use((req, res, next) => {
     const error = new Error("Not Found");
