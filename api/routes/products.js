@@ -6,6 +6,7 @@ const Product = require("../models/product");
 
 router.get('/', (req, res, next) => {
     Product.find()
+        .select("_id name price quantity")
         .exec()
         .then(docs => {
             res.status(200).json(docs)
@@ -51,7 +52,7 @@ router.post('/', (req, res, next) => {
             })
         })
         .catch(err => {
-            res.status(500).json({ err: error });
+            res.status(500).json({ error: err });
         })
 })
 
